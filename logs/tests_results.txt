@@ -1,17 +1,7 @@
 test_color_name_to_hex (__main__.TestExercice) ... ok
-test_compute_mse (__main__.TestExercice) ... FAIL
+test_compute_mse (__main__.TestExercice) ... ok
 test_create_list (__main__.TestExercice) ... FAIL
-test_list_to_dict (__main__.TestExercice) ... FAIL
-
-======================================================================
-FAIL: test_compute_mse (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 62, in test_compute_mse
-    self.assertDictEqual(
-AssertionError: {'LR': 258.3833333333333, 'DNN': 15.133333333333333, 'RF': 2201.1333333333337} != {'LR': 220.6, 'DNN': 14.0, 'RF': 1681.8}
-- {'DNN': 15.133333333333333, 'LR': 258.3833333333333, 'RF': 2201.1333333333337}
-+ {'DNN': 14.0, 'LR': 220.6, 'RF': 1681.8} : Erreur dans le calcul des MSE
+test_list_to_dict (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_create_list (__main__.TestExercice)
@@ -27,24 +17,7 @@ First extra element 9664:
 
 Diff is 86326 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
 
-======================================================================
-FAIL: test_list_to_dict (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 22, in test_list_to_dict
-    self.assertListEqual(
-AssertionError: Lists differ: [{0: 'a', 1: 'b', 2: 'z', 3: 'patate'}, {0:[33 chars]re'}] != [{'a': 0, 'b': 1, 'z': 2, 'patate': 3}, {'a[33 chars]: 3}]
+Ran 4 tests in 0.058s
 
-First differing element 0:
-{0: 'a', 1: 'b', 2: 'z', 3: 'patate'}
-{'a': 0, 'b': 1, 'z': 2, 'patate': 3}
-
-- [{0: 'a', 1: 'b', 2: 'z', 3: 'patate'},
--  {0: 'a', 1: '2', 2: 'hello', 3: 'tigre'}]
-+ [{'a': 0, 'b': 1, 'patate': 3, 'z': 2},
-+  {'2': 1, 'a': 0, 'hello': 2, 'tigre': 3}] : Mauvaise reponse
-
-----------------------------------------------------------------------
-Ran 4 tests in 0.050s
-
-FAILED (failures=3)
+FAILED (failures=1)
